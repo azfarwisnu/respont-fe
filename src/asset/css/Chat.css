@@ -1,0 +1,1109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
+
+body {
+  background: #17181f;
+  font-family: "Poppins", sans-serif;
+}
+
+input,
+input:focus,
+input:hover,
+button,
+button:hover,
+button:active,
+button:focus,
+textarea:focus,
+textarea:hover,
+textarea {
+  box-shadow: none !important;
+  outline: none !important;
+  resize: none !important;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+button:disabled {
+  cursor: no-drop;
+}
+
+.anti-block {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-no-drop {
+  cursor: no-drop;
+}
+
+.copy-tooltip {
+  width: 120px !important;
+}
+
+.overflow-custom::-webkit-scrollbar {
+  width: 5px;
+}
+
+.overflow-custom::-webkit-scrollbar-thumb {
+  background: #39435e;
+  border-radius: 10px;
+}
+
+.overflow-custom::-webkit-scrollbar-thumb:hover {
+  background: #39435e;
+}
+
+.connect-box {
+  height: 100vh;
+  background-image: url("../bg-dashboard.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.connect-box .logo {
+  padding: 20px;
+}
+
+.connect-box .logo .logo-img {
+  font-weight: bold;
+  font-size: 25px;
+  color: #fff;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.connect-box .logo div {
+  background: #39435e;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.connect-box .logo div img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.connect-box .logo div p {
+  font-size: 15px;
+  opacity: 80;
+}
+
+.connect-box .logo div button {
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+}
+
+.connect-box .logo div .text-danger {
+  font-size: 13px;
+  display: block;
+  opacity: 100;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.empty-box {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.empty-box div {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.empty-box div span {
+  color: #fff;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+}
+
+.alert-box {
+  position: fixed;
+  z-index: 3;
+  padding: 10px 15px;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.3);
+}
+
+.alert-box p {
+  margin-bottom: 0;
+}
+
+.alert-box-white:hover {
+  color: white !important;
+}
+
+.loader {
+  border: 3px solid transparent;
+  border-radius: 50%;
+  border-top: 3px solid #fff;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: -5px;
+  margin-top: 5px;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.modal-profile {
+  background: #1f2029;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.modal-profile img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 3px solid #fff;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.modal-profile input {
+  display: none;
+}
+
+.modal-profile div {
+  margin: 0 auto;
+  width: 204px;
+}
+
+.modal-profile div button {
+  background: #34538a;
+  color: #fff;
+  margin: 15px 5px 0 5px;
+  padding: 5px 20px;
+  font-family: "Nunito", sans-serif;
+  border: 0;
+  border-radius: 20px !important;
+}
+
+.modal-profile div .close {
+  border: 2px solid #fff;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.modal-profile div .close:hover {
+  background: #fff;
+  color: #000;
+}
+
+.left-section {
+  background: #1f2029;
+  height: 100vh;
+  padding-top: 160px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.left-section .section-head {
+  background: #1f2029;
+  z-index: 4;
+  margin-top: -160px;
+}
+
+.left-section .profile-box {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 5px 9px 5px 9px;
+  margin-top: 10px;
+  margin-bottom: -10px;
+  width: 100%;
+}
+
+.left-section .profile-box .bi {
+  display: block;
+  z-index: 1;
+  position: absolute;
+  font-size: 13px;
+  top: 45px;
+  left: 65px;
+}
+
+.left-section .profile-box img {
+  cursor: pointer;
+  position: absolute;
+}
+
+.left-section .profile-box div {
+  width: 100%;
+}
+
+.left-section .profile-box i {
+  font-size: 20px;
+  margin-top: 12px;
+}
+
+.left-section .profile-box div p {
+  font-family: "Nunito", sans-serif;
+  margin-top: 17px;
+  font-size: 17px;
+  color: #fff;
+  margin-left: 70px;
+  padding-right: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.left-section .search-box {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.left-section .search-box i {
+  margin-left: 13px;
+  margin-right: -30px;
+  margin-top: 7px;
+  z-index: 1;
+}
+
+.left-section .search-box input {
+  display: inline-block;
+  font-family: "Nunito", sans-serif;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 7px 10px 7px 40px;
+  border-radius: 5px;
+  border: none;
+  background: #39435e;
+  color: #fff;
+}
+
+.left-section .search-box input::placeholder {
+  color: #fff;
+  opacity: 0.75;
+}
+
+.left-section .search-box input:-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.75;
+}
+
+.left-section .search-box input::-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.75;
+}
+
+.left-section hr {
+  border-color: #55aeac;
+  margin: 15px 0;
+}
+
+.left-section .connections-list .connections-head {
+  padding: 15px 9px 0 9px;
+  margin-top: 0;
+}
+
+.left-section .connections-list .connections-head i {
+  display: inline-block;
+  font-size: 17px;
+}
+
+.left-section .connections-list .connections-head p {
+  display: inline-block;
+  font-size: 17px;
+  margin: 0 0 0 10px;
+}
+
+.left-section .connections-list button {
+  padding: 7px 10px;
+  font-size: 14px;
+  width: 50%;
+  background: #34538a;
+  color: #fff;
+  border-radius: 20px;
+  border: 2px solid #34538a;
+  margin-top: 80px;
+}
+
+.left-section .connections-list button i {
+  margin-right: 5px;
+}
+
+.left-section .connections-list .scan {
+  background: transparent;
+  border: 2px solid #fff;
+  transition: 0.4s;
+}
+
+.left-section .connections-list .scan:hover {
+  background: #fff;
+  border: 2px solid #fff;
+  color: #000;
+}
+
+.left-section .connections-list .qr {
+  width: 220px;
+  height: 220px;
+  border-radius: 20px;
+  background: #f2f1f2;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 7px;
+  cursor: none;
+}
+
+.left-section .connections-list .connection {
+  width: 100%;
+  padding: 10px;
+  transition: 0.4s;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.left-section .connections-list .connection:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.left-section .connections-list .connection .detail-box {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.left-section .connections-list .connection .icon {
+  width: 45px;
+  height: 45px;
+  background: #f2f1f2;
+  margin-right: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.left-section .connections-list .connection .icon i {
+  color: #000;
+  font-size: 30px;
+}
+
+.left-section .connections-list .connection .detail {
+  margin-left: 10px;
+}
+
+.left-section .connections-list .connection .detail span {
+  display: block;
+}
+
+.left-section .connections-list .connection .detail span {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.left-section .connections-list .connection .detail span i {
+  font-size: 5px;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+
+.left-section .connections-list .connection .detail span[class="user-agent"] {
+  font-size: 14px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+.left-section .connections-list .connection button{
+  margin-top: 15px;
+  border: none;
+}
+
+.list-box {
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.4s;
+  padding: 10px;
+  margin-bottom: 7px;
+  display: flex;
+  flex-wrap: nowrap;
+  color: #fff;
+  cursor: pointer;
+}
+
+.list-day {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.list-day hr {
+  border-color: rgba(255, 255, 255, 0.9);
+  margin-bottom: -15px;
+}
+
+.list-day p {
+  color: #000;
+  padding: 5px 10px;
+  width: fit-content;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.9);
+  margin: 0 auto;
+}
+
+.list-box:hover,
+.active {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.list-box img {
+  width: 60px;
+  flex-shrink: 0;
+}
+
+.list-box img,
+.left-section .profile-box img,
+.right-section .profile-box img {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #fff;
+}
+
+.list-box .right {
+  width: 100%;
+  margin-left: 7px;
+}
+
+.list-box .right .opponent {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.list-box .right .opponent .address {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.list-box .right .opponent .time {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-left: 5px;
+  text-align: right;
+}
+
+.list-box .right .preview {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.list-box .right .preview p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: -10px;
+  margin-bottom: 0;
+}
+
+.list-box .right .preview span {
+  margin-top: -10px;
+  margin-left: 3px;
+  font-size: 11px;
+  border-radius: 20px;
+  background: #5698ca;
+  min-width: 20px;
+}
+
+.right-section {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  padding-left: 0;
+}
+
+.right-section .profile-box {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 5px 9px;
+  margin-top: 10px;
+  margin-bottom: -10px;
+  position: fixed;
+  margin-top: -100px;
+  padding: 20px;
+  background: #1f2029;
+  z-index: 2;
+  right: 0;
+}
+
+.right-section .profile-box img {
+  flex-shrink: 0;
+}
+
+.right-section .profile-box i {
+  display: none;
+}
+
+.right-section .profile-box p {
+  font-family: "Poppins", sans-serif;
+  margin-top: 17px;
+  font-size: 17px;
+  color: #fff;
+  margin-left: 10px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.right-section .input-chat {
+  position: fixed;
+  bottom: 0;
+  padding: 30px 0px;
+  background: #1f2029;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.right-section .input-chat input[type="text"] {
+  background: #1f2029;
+  width: 61%;
+  border-radius: 12px;
+}
+
+.right-section .input-chat input {
+  background-color: #1f2029;
+  border: none;
+  color: #fff;
+  width: 100%;
+  display: inline-block;
+  margin-left: 20px;
+  text-indent: 5px;
+}
+
+.right-section .input-chat label {
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 0p;
+  padding: 5px 10px;
+  width: 40px;
+  height: 40px;
+  background: #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.right-section .input-chat input[type="file"] {
+  display: none;
+}
+
+.bubble-box {
+  margin-right: -10px;
+  padding-bottom: 200px;
+  max-height: 100vh;
+  overflow-y: auto;
+  background: transparent;
+}
+
+.bubble-box .day, .bubble-box .unread {
+  background: rgba(255, 255, 255, 0.05);
+  color: #fcf4d2;
+  padding: 5px 15px;
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.bubble-box .day p {
+  margin-bottom: 0;
+}
+
+.bubble-box .opponent .message {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.bubble-box .opponent .message .text {
+  background: #1f2029;
+  border-radius: 15px 15px 15px 0;
+  max-width: 70%;
+  word-break: break-word;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.bubble-box .opponent .message .text p {
+  color: #fff !important;
+}
+
+.bubble-box .opponent .message .image {
+  background: #1f2029;
+  border-radius: 15px 15px 0 15px;
+  max-width: 70%;
+}
+
+.bubble-box .opponent .message .image div {
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.bubble-box .opponent .message .image div .more-image {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.bubble-box .opponent .message .image div .more-image img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin: -5px;
+  cursor: pointer;
+}
+
+.bubble-box .opponent .message .image div .more-image div {
+  width: 120px;
+  height: 120px;
+  margin-bottom: -120px;
+  margin-top: -5px;
+  margin-left: -5px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  cursor: pointer;
+}
+
+.bubble-box .opponent .message .image div .more-image div p {
+  margin-bottom: 0;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-size: 30px;
+  line-height: 120px;
+  text-align: center;
+}
+
+.bubble-box .opponent .message .image div img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.bubble-box .opponent .message .image p {
+  padding: 10px;
+  margin-top: -10px;
+  color: #fff;
+}
+
+.bubble-box .opponent .time {
+  float: left !important;
+}
+
+.bubble-box .opponent,
+.bubble-box .you {
+  padding: 0 60px;
+}
+
+.bubble-box .you,
+.bubble-box .opponent {
+  margin: 25px 0;
+}
+
+.bubble-box .you .message {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: right;
+}
+
+.bubble-box .you .message .text {
+  background: #fcf4d2;
+  border-radius: 15px 15px 0 15px;
+  max-width: 70%;
+  word-break: break-all;
+  padding: 10px 20px;
+}
+
+.bubble-box .you .message .image {
+  background: #fcf4d2;
+  border-radius: 15px 15px 0 15px;
+  max-width: 70%;
+}
+
+.bubble-box .you .message .image div {
+  padding: 5px;
+  border-radius: 15px;
+  max-width: 270px;
+}
+
+.bubble-box .you .message .image div .more-image {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.bubble-box .you .message .image div .more-image img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin: -5px;
+  cursor: pointer;
+}
+
+.bubble-box .you .message .image div .more-image div {
+  width: 120px;
+  height: 120px;
+  margin-bottom: -120px;
+  margin-top: -5px;
+  margin-left: -5px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  cursor: pointer;
+}
+
+.bubble-box .you .message .image div .more-image div p {
+  margin-bottom: 0;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-size: 30px;
+  line-height: 120px;
+  text-align: center;
+}
+
+.bubble-box .you .message .image div img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.bubble-box .you .message .image p {
+  padding: 10px;
+  margin-top: -10px;
+}
+
+.bubble-box .you .message div p,
+.bubble-box .opponent .message div p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  color: #000;
+}
+
+.bubble-box .you .time,
+.bubble-box .opponent .time {
+  float: right;
+  color: #fff;
+  font-size: 12px;
+  opacity: 0.85;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0;
+}
+
+.modal-file .image {
+  background: #1f2029;
+  padding: 20px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.modal-file .image .image-list {
+  overflow-y: auto;
+  height: inherit;
+  max-height: 400px;
+  text-align: center;
+  max-width: 100%;
+}
+
+.modal-file .image .image-list img {
+  height: auto;
+  width: auto;
+  max-width: 250px;
+  max-height: 100%;
+  margin: 5px;
+}
+
+.modal-file .image .input-box {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.modal-file .image input[type="text"] {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 7px 15px;
+  font-family: "Nunito", sans-serif;
+  width: 70%;
+  min-width: 250px;
+  max-width: 100%;
+  font-size: 15px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.modal-file .image .input-box span {
+  font-size: 13px;
+  color: #fcf4d2;
+}
+
+.modal-view .image {
+  background: #1f2029;
+  max-width: 100%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.modal-view .image img {
+  width: auto;
+  height: auto;
+  max-height: 75vh;
+  max-width: 100%;
+}
+
+.modal-view .image .icon {
+  color: #fff;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.modal-view .image .icon:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-view .image .left {
+  left: 20px;
+}
+
+.modal-view .image .right {
+  right: 20px;
+}
+
+.modal-view .image-list {
+  background: #1f2029;
+  max-width: 100%;
+  padding: 0 30px 30px 30px;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
+
+.modal-view .image-list div {
+  width: 80px;
+  height: 80px;
+  margin: 0 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.modal-view .image-list img {
+  width: auto;
+  height: auto;
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.context-list,
+.settings-list,
+.qr-box {
+  position: absolute;
+  z-index: 3;
+  width: 255px;
+  height: 100px;
+  background: #000;
+  color: #fff;
+  padding: 7px;
+}
+
+.context-list div,
+.settings-list div {
+  padding: 10px 15px;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+.context-list div:hover,
+.settings-list div:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.context-list div i,
+.settings-list div i {
+  margin-right: 10px;
+}
+
+.settings-list,
+.qr-box {
+  top: 80px;
+  left: 15px;
+  z-index: 5;
+  height: 190px;
+  width: 250px;
+}
+
+.settings-list .bi-circle-fill {
+  font-size: 8px;
+  margin: 0 0 0 10px;
+}
+
+.qr-box {
+  height: 350px;
+  padding: 15px;
+  background: #fff;
+}
+
+.qr-box b {
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  margin-right: 20px;
+}
+
+.qr-box span {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  display: block;
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.qr-box div {
+  width: 220px;
+  height: 220px;
+  margin-top: 15px;
+  border-radius: 20px;
+  background: #f2f1f2;
+  padding: 5px;
+}
+
+.qr-box div canvas {
+  cursor: none;
+}
+
+@media only screen and (max-width: 374px) {
+  .left-section .connections-list .connection .icon {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width:1060px) {
+  .left-section .connections-list .connection .icon {
+    display: none;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 767px) {
+  .mobile-section {
+    display: none !important;
+  }
+
+  .right-section .input-chat {
+    right: 0;
+  }
+
+  .right-section .profile-box img {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+  }
+
+  .right-section .profile-box i {
+    z-index: 1;
+    color: #fff;
+    margin-right: 10px;
+    margin-top: 13px;
+    font-size: 20px;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1550px) {
+  .list-box .right {
+    padding-right: 70px;
+  }
+}
